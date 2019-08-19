@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>c++中如何分割字符串（How to Split a string in C++?）</title>
+		<link>/article/142</link>
+				<pubDate>Fri, 18 Mar 2016 10:16:15 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[未分类]]></category>
+
+		<guid isPermaLink="false">/?p=142</guid>
+				<description><![CDATA[在c++中并没有原生对分割string的支持，所以程序员一般靠自己实现或者使用boost的库，下面是一个来自s [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>在c++中并没有原生对分割string的支持，所以程序员一般靠自己实现或者使用boost的库，下面是一个来自stackoverflow大牛的解决方案：</p>
+<p>http://stackoverflow.com/a/236803</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>KLEE概览</title>
+		<link>/article/135</link>
+				<pubDate>Fri, 18 Dec 2015 11:53:13 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[KLEE]]></category>
+
+		<guid isPermaLink="false">/?p=135</guid>
+				<description><![CDATA[本文翻译自KLEE官方doxygen文档High level overview of KLEE。 原文链接：h [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>本文翻译自KLEE官方doxygen文档High level overview of KLEE。<br />
+原文链接：<a href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/overview.html" target="_blank">http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/overview.html</a></p>
+<h2>KLEE 概览</h2>
+<p>这一篇文章宏观的讲述了一些KLEE内部实现的机制。</p>
+<p>KLEE是基于LLVM的字节码来实现符号执行的。符号化的内存定义的方法是在程序执行过程中插入一个对KLEE的特殊调用（使用klee_make_symbolic函数）。KLEE会跟踪所有的符号化内存的使用，并且会收集使用这些符号化内存时的约束。那些使用了已声明的符号化内存的内存也会被符号化。当遇到一个使用符号化内存的分支时，KLEE会将执行状态一分为二，看看分支的哪一边可以找到一个可以满足符号约束的解。KLEE使用STP来求解这些符号约束。</p>
+<p>接下来我们会介绍一些KLEE重要的组件。</p>
+<h3>解释器（Interpreter）</h3>
+<p><a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1Interpreter.html">klee::Interpreter</a> 在字节码解释器接口中是一个主要的抽象类。<a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1Executor.html">klee::Executor</a> 是这个类的一个主要的实例。应用程序的状态（比如说：内存，寄存器，和程序计数器）会被存储在<a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1ExecutionState.html">klee::ExecutionState</a> 的一个实例中。每一条路径被执行的的时候都会有一个这样子的实例（除非当一些执行状态又合并到了一起的时候）。在有分支的地方，如果条件是符号化的，那<a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1Executor.html#a5ecb7cde8b3864d23c82e3c092624849">klee::Executor::fork</a> 方法就会返回一个klee::ExecutionState::StatePair 来表示一对由分支产生的ExecutionState 。</p>
+<h3>内存模型（Memory model）</h3>
+<p>MemoryObject 表示程序里面的地址分配（比如说调用malloc，stack objects， global variables），同时我们也可以简单的认为它是一个分配在某个地址上的对象独一无二的名字。ObjectState 是用来存储在一个特定的ExecutionState 中一个MemoryObject 中实际的内容（是不能被共享的）。事实上，我觉得这两个东西应该有更好的名字才对。</p>
+<p>每一个ExecutionState 使用AddressSpace 数据结构来保存从MemoryObjects -&gt; ObjectState 的映射（AddressSpace是通过一个固定的树来实现的，所以可以很轻易的复制和共享）。每个AddressSpace都会包含在映射中ObjectStates 的一部分。当一个AddressSpace被复制的时候，它会丢失它所包含的ObjectState。之后所有对ObjectState的写入操作，都会生成一个这个对象的复制（AddressSpace::getWriteable）。这是一个保险机制（这个机制对所有的对象都是有效的，不仅仅的全局对象）。</p>
+<p>从状态和映射的角度来看，堆、栈和全局对象并没有什么区别。唯一对栈对象有一些些不同的处理就是，MemoryObject会被标记为isLocal并且这个MemoryObject会被存储在StackFrame的分配表里面。当StackFrame进行pop之后，这些对象都会被释放掉，以至于当前状态就再也不能直接访问内存了（对内存对象的引用可能仍然会在ReadExprs里，但是理论上说，实际的地址我们应该是找不到了）。</p>
+<p>另外很重要的一点是，AddressSpace的映射是有序的。当我们想将一个符号化的地址解析为ObjectState时我们会用到它，我们先用一个特殊的值来表示符号化的地址，然后用这个值来找那些指针指向这个地址的对象。MemoryObjects和ObjectStates并没有什么区别。</p>
+<h3>表达式（Expressions）</h3>
+<p>很多Expr类都对llvm的指令集进行了建模。<a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1ref.html">ref&lt;Expr&gt;</a>是用来维护引用计数的，但是同时也是嵌入了许多常量表达式。事实上在现在的代码中，ConstantExprs几乎都不用被创建了。大多数表达式都是简明直接的。有一些表达式非常重要，比如说Concat?Expr这种类型的表达式，它能够将一些字节合并到一个更大的类型中。ExtractExpr能够将一个小类型从大类型中提取出来。ReadExpr能够访问一个符号化的数组。</p>
+<p>所有对内存的访问都会被拆分成字节级的操作来实现。这就意味着内存系统（我指的的是ObjectState 数据结构）需要使用非常多的ExtractExpr和Concat?Expr表达式，所以这些表达式应该尽可能的压缩他们的操作数。</p>
+<p>ReadExpr可能是里面最重要的一个了。理论上说，它就是一个索引和一些更新（写入）。ReadExpr会计算所有的值，所以两个索引是可以相等的。 ObjectState会缓存那些具体的写入或者是在具体的索引上的一些形式化的写入，但是对于形式化的索引来说它就需要构建一个针对这些更新的列表。这些信息会放在UpdateList和UpdateNode中，同样他们也是固定的数据结构，所以可以轻易的复制和共享。</p>
+<h3>搜索器（Searcher）</h3>
+<p>基础类是<a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1Searcher.html">klee::Searcher</a>。Executor通过使用一个Searcher 去选择下一个状态（也就是说一个程序实例只走一条路径），从而使得一条语句被执行。在KLEE中有非常多的Searcher实现，分别实现了不同的搜索策略。<a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1RandomSearcher.html">klee::RandomSearcher</a>是随机选择下一个状态，<a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1DFSSearcher.html">klee::DFSSearcher</a>使用了深度遍历的搜索方法。<a class="el" href="http://www.doc.ic.ac.uk/~dsl11/klee-doxygen/classklee_1_1MergingSearcher.html">klee::MergingSearcher</a>尝试去合并状态。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>什么是UEFI和legacy模式？</title>
+		<link>/article/132</link>
+				<pubDate>Wed, 02 Dec 2015 10:53:32 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=132</guid>
+				<description><![CDATA[UEFI是一种新型的boot模式，它能够给BIOS更高的安全性，相应的，也就无法通过easyESD之类的软件来 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>UEFI是一种新型的boot模式，它能够给BIOS更高的安全性，相应的，也就无法通过easyESD之类的软件来修改电脑的启动引导了。如果我们要解决这个问题，我们可以在电脑开机时狂按setup功能键（在Dell机子上通常是F2），进入boot菜单，将boot的模式由UEFI换成legacy（也就是传统模式）就可以正常的修改电脑的启动引导了。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>在javascript中，如何将字符串转换为JSON格式</title>
+		<link>/article/130</link>
+				<pubDate>Sun, 29 Nov 2015 08:50:15 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=130</guid>
+				<description><![CDATA[只需使用JSON.parse即可，例： var jsonObject = JSON.parse('{"Hell [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>只需使用JSON.parse即可，例：</p>
+<pre><code>
+var jsonObject = JSON.parse('{"Hello":"world"}');
+</code></pre>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>The box &#8216;ubuntu/trusty64&#8217; could not be found.</title>
+		<link>/article/126</link>
+				<pubDate>Thu, 19 Nov 2015 12:32:54 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=126</guid>
+				<description><![CDATA[Problem If you meet &#8216;The box &#8216;ubuntu/trusty [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong>Problem</strong></p>
+<p>If you meet &#8216;The box &#8216;ubuntu/trusty64&#8242; could not be found.&#8217;, when you use vagrant.</p>
+<p><strong>solution</strong></p>
+<p>Remove the vagrant on you system, and download the latest  version of vagrant on</p>
+<p><a href="https://www.vagrantup.com/downloads.html">https://www.vagrantup.com/downloads.html</a></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>如何解决一个git仓库中嵌套一个git仓库的问题</title>
+		<link>/article/122</link>
+				<pubDate>Sat, 14 Nov 2015 10:28:02 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+		<category><![CDATA[未分类]]></category>
+
+		<guid isPermaLink="false">/?p=122</guid>
+				<description><![CDATA[问题 如果在一个git仓库中嵌套了一个git仓库，那么被嵌套的git仓库的改动，不能被大git仓库检测到。 即 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong>问题</strong></p>
+<p>如果在一个git仓库中嵌套了一个git仓库，那么被嵌套的git仓库的改动，不能被大git仓库检测到。<br />
+即：仓库A的代码中包含仓库B，A不会检测到B的改动。但是我们常常会在代码中引入其他仓库，那应该怎么解决呢？</p>
+<p><strong>解决方案</strong></p>
+<p>我们可以使用submodule，我们在引入子仓库时，使用如下命令即可：</p>
+<pre><code>
+git submodule add https://github.com/chaconinc/DbConnector
+</code></pre>
+<p>作用类似git clone，但是他会在父仓库的下面新建.gitmodules文件，并且包含以下内容</p>
+<pre><code>
+[submodule "apps/firstApp"]
+	path = apps/firstApp
+	url = https://github.com/muchang/mean-seed-app.git
+</code></pre>
+<p>这一段表示子仓库的位置，以及子仓库的远程仓库的地址。</p>
+<p>当我们删除子仓库并且commit之后，这个文件和这个子仓库有关的部分就会消失。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>如何在npm run script命令中使用参数</title>
+		<link>/article/120</link>
+				<pubDate>Sat, 14 Nov 2015 10:20:29 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=120</guid>
+				<description><![CDATA[首先，非常遗憾的告诉大家，只能在npm run script命令的末尾加入参数，不能在命令中加入参数。 那么， [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>首先，非常遗憾的告诉大家，只能在npm run script命令的末尾加入参数，不能在命令中加入参数。<br />
+那么，我们怎么在npm run script命令中加入参数呢，我们举个例子</p>
+<p>package.json</p>
+<pre><code>
+{ 
+  "name" : "foo", 
+  "config" : { "port" : "8080" }, 
+  "scripts" : { "moveTo" : "mv original" }
+}
+</code>
+</pre>
+<p>在package.json文件中我们写入这样的内容，我们可以看到,我们使用&#8221;moveTo&#8221;命令去表示&#8221;mv&#8221;。<br />
+在使用中，我们只能把original文件重命名（或移动）成其他文件，而不能把其他文件重命名（或移动）成original，即是只能将参数加入命令的末尾而不能加在中间。<br />
+如果我们执行</p>
+<pre><code>
+$ npm run moveTo -- target
+</code></pre>
+<p>相当于执行了</p>
+<pre><code>
+$ mv original target
+</code></pre>
+<p>明白了吗？</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Virtualenv使用入门</title>
+		<link>/article/117</link>
+				<pubDate>Fri, 13 Nov 2015 08:53:32 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+
+		<guid isPermaLink="false">/?p=117</guid>
+				<description><![CDATA[Virtualenv是一个生成python虚拟环境的一个工具，它可以生成针对python的虚拟环境，主要是为了 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Virtualenv是一个生成python虚拟环境的一个工具，它可以生成针对python的虚拟环境，主要是为了将不同的python包给隔离开来，避免互相影响。可以理解为专门针对python的虚拟机。</p>
+<p>下面我们看怎样创建并运行一个Virtualenv虚拟环境</p>
+<pre><code>
+$ sudo easy_install pip  # If pip is not already installed
+$ sudo pip install --upgrade virtualenv
+$ virtualenv --system-site-packages ~/the/path/you/want/to/locate
+$ cd ~/the/path/you/want/to/locate
+$ source bin/activate  # If using bash 启动虚拟环境
+$ source bin/activate.csh  # If using csh
+(FileName)$  # Your prompt should change
+</code>
+</pre>
+<p>如果命令符前面出现(你放置虚拟环境的文件夹名)说明你已经处于该环境下。<br />
+如果你想退出虚拟环境：</p>
+<pre><code>(FileName)$ deactivate </code></pre>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>一个内存修改器 Cheat Engine</title>
+		<link>/article/115</link>
+				<pubDate>Wed, 11 Nov 2015 08:22:16 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+
+		<guid isPermaLink="false">/?p=115</guid>
+				<description><![CDATA[刚发现一个内存修改器 Cheat Engine，mark一下，有空研究。 homepage:http://ww/ [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>刚发现一个内存修改器 Cheat Engine，mark一下，有空研究。</p>
+<p>homepage:http://www.cheatengine.org/</p>
+<p>（需要翻墙）</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>What is Symbolic Execution?</title>
+		<link>/article/105</link>
+				<pubDate>Mon, 09 Nov 2015 14:02:09 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[paper]]></category>
+
+		<guid isPermaLink="false">/?p=105</guid>
+				<description><![CDATA[Instead of executing a program on a set of sample input [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Instead of executing a program on a set of sample inputs, Symbolic Execution use symbolic values for inputs which could mean a set of classes inputs. It indicate that we needn&#8217;t execute a program with a large number of normal test cases, but choose some test cases representatives.<br />
+Now, we give a simple example:</p>
+<pre><code>
+int i = read();
+if (i&gt;0) {
+  i = 0;
+}
+print("finish");
+</code></pre>
+<p>There is a important concept called &#8220;path condition&#8221; means if you want to go through the path, you should satisfy the condition.<br />
+In our example, first we assume read() return symbolic &#8220;X&#8221;, we could find that i = X. And we meet the IF statement, what should we do? we shall check IF statement &#8220;forkable&#8221; or not. if the statement is &#8220;forkable&#8221;, we fork execution into two &#8220;parallel&#8221; execution, if not, we just go single side. The two &#8220;parallel&#8221; execution have they own &#8220;path condition&#8221;: ( true &amp;&amp; X &gt; 0 ) and ( true &amp;&amp; (!X &gt; 0) ).  (true)  is the original path condition.<br />
+After we find out all path conditions, we use Constraint Solver to figure out some representative values for each path conditions and use these values to test program.<br />
+In our example, Constraint Solver could figure out X = 1 for ( true &amp;&amp; X &gt; 0 ) and X = -1 for ( true &amp;&amp; (!X &gt; 0) ). These test cases obviously cover our example program. we succeed!</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

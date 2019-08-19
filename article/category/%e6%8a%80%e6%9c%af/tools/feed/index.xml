@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tools &#8211; Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/article/category/%E6%8A%80%E6%9C%AF/tools/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Virtualenv使用入门</title>
+		<link>/article/117</link>
+				<pubDate>Fri, 13 Nov 2015 08:53:32 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+
+		<guid isPermaLink="false">/?p=117</guid>
+				<description><![CDATA[Virtualenv是一个生成python虚拟环境的一个工具，它可以生成针对python的虚拟环境，主要是为了 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Virtualenv是一个生成python虚拟环境的一个工具，它可以生成针对python的虚拟环境，主要是为了将不同的python包给隔离开来，避免互相影响。可以理解为专门针对python的虚拟机。</p>
+<p>下面我们看怎样创建并运行一个Virtualenv虚拟环境</p>
+<pre><code>
+$ sudo easy_install pip  # If pip is not already installed
+$ sudo pip install --upgrade virtualenv
+$ virtualenv --system-site-packages ~/the/path/you/want/to/locate
+$ cd ~/the/path/you/want/to/locate
+$ source bin/activate  # If using bash 启动虚拟环境
+$ source bin/activate.csh  # If using csh
+(FileName)$  # Your prompt should change
+</code>
+</pre>
+<p>如果命令符前面出现(你放置虚拟环境的文件夹名)说明你已经处于该环境下。<br />
+如果你想退出虚拟环境：</p>
+<pre><code>(FileName)$ deactivate </code></pre>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>一个内存修改器 Cheat Engine</title>
+		<link>/article/115</link>
+				<pubDate>Wed, 11 Nov 2015 08:22:16 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+
+		<guid isPermaLink="false">/?p=115</guid>
+				<description><![CDATA[刚发现一个内存修改器 Cheat Engine，mark一下，有空研究。 homepage:http://ww/ [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>刚发现一个内存修改器 Cheat Engine，mark一下，有空研究。</p>
+<p>homepage:http://www.cheatengine.org/</p>
+<p>（需要翻墙）</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>node.js &#8211; Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/article/category/%E6%8A%80%E6%9C%AF/mean/node-js/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Node.js操作mongoDB</title>
+		<link>/article/66</link>
+				<pubDate>Wed, 28 Oct 2015 09:31:38 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+
+		<guid isPermaLink="false">/?p=66</guid>
+				<description><![CDATA[对于Node.js怎样操作mongoDB，我们可以在mongoDB的官方文档上面找到: https://doc/ [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>对于Node.js怎样操作mongoDB，我们可以在mongoDB的官方文档上面找到:<br />
+<a href="https://docs.mongodb.org/getting-started/node/">https://docs.mongodb.org/getting-started/node/</a></p>
+<p>下面是一些学习的总结：</p>
+<h5>准备工作</h5>
+<p>在我们开始之前我默认你已经安装好了Node.js和mongoDB。<br />
+先使用一个CLI窗口运行mongoDB，假设mongoDB的bin已经加入到系统的路径(Path)里面。<br />
+下面我们启动mongoDB</p>
+<pre><code>$(sudo) mongod </code></pre>
+<p>出现下图的命令行<a href="/wp-content/uploads/2015/10/windows.png"><img class="alignnone size-large wp-image-78" src="/wp-content/uploads/2015/10/windows-1024x609.png" alt="windows" width="700" height="416" srcset="/wp-content/uploads/2015/10/windows-1024x609.png 1024w, /wp-content/uploads/2015/10/windows-300x178.png 300w, /wp-content/uploads/2015/10/windows.png 1298w" sizes="(max-width: 700px) 100vw, 700px" /></a><br />
+说明mongoDB数据库运行在127.0.0.1地址的27017端口。</p>
+<h5>安装驱动(Driver)</h5>
+<pre><code>$ (sudo) npm install mongodb</code></pre>
+<p>这表示在当前文件夹下安装mongodb模块，之后我们可以使用他来在Node.js上连接操作mongoDB。</p>
+<h5>连接数据库</h5>
+<p>接下来我们在安装mongodb模块的文件夹下新建一个.js的javascript文件(例如app.js)。下面我们的javascript代码都是在这个文件中写的。</p>
+<pre><code>
+//引入mongodb模块。
+var MongoClient = require('mongodb').MongoClient; 
+
+//引入assert模块，用来确认是否发生了错误。        
+var assert = require('assert'); 
+
+//用url存储数据库的地址以及接口。
+//localhost是数据库服务器地址。
+//27017是数据库服务器端口。
+//test是数据库名。                         
+var url = 'mongodb://localhost:27017/test';
+
+//连接数据库，如果成功执行function                        
+MongoClient.connect(url, function(err, db) {
+
+  //确认err是为null的，即没有发生错误
+  assert.equal(null, err);
+
+  //在控制台输出Connected correctly to server.
+  console.log("Connected correctly to server.");
+
+  //关闭数据库连接
+  db.close();
+});
+</code></pre>
+<p>在该.js文件所在目录运行（以app.js为例）</p>
+<pre><code>$ (sudo) node app.js</code></pre>
+<p>在CLI窗口显示</p>
+<pre>Connected correctly to server.</pre>
+<p>即为连接成功。</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

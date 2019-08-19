@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>未分类 &#8211; Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/article/category/uncategorized/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>c++中如何分割字符串（How to Split a string in C++?）</title>
+		<link>/article/142</link>
+				<pubDate>Fri, 18 Mar 2016 10:16:15 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[未分类]]></category>
+
+		<guid isPermaLink="false">/?p=142</guid>
+				<description><![CDATA[在c++中并没有原生对分割string的支持，所以程序员一般靠自己实现或者使用boost的库，下面是一个来自s [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>在c++中并没有原生对分割string的支持，所以程序员一般靠自己实现或者使用boost的库，下面是一个来自stackoverflow大牛的解决方案：</p>
+<p>http://stackoverflow.com/a/236803</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>如何解决一个git仓库中嵌套一个git仓库的问题</title>
+		<link>/article/122</link>
+				<pubDate>Sat, 14 Nov 2015 10:28:02 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+		<category><![CDATA[未分类]]></category>
+
+		<guid isPermaLink="false">/?p=122</guid>
+				<description><![CDATA[问题 如果在一个git仓库中嵌套了一个git仓库，那么被嵌套的git仓库的改动，不能被大git仓库检测到。 即 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong>问题</strong></p>
+<p>如果在一个git仓库中嵌套了一个git仓库，那么被嵌套的git仓库的改动，不能被大git仓库检测到。<br />
+即：仓库A的代码中包含仓库B，A不会检测到B的改动。但是我们常常会在代码中引入其他仓库，那应该怎么解决呢？</p>
+<p><strong>解决方案</strong></p>
+<p>我们可以使用submodule，我们在引入子仓库时，使用如下命令即可：</p>
+<pre><code>
+git submodule add https://github.com/chaconinc/DbConnector
+</code></pre>
+<p>作用类似git clone，但是他会在父仓库的下面新建.gitmodules文件，并且包含以下内容</p>
+<pre><code>
+[submodule "apps/firstApp"]
+	path = apps/firstApp
+	url = https://github.com/muchang/mean-seed-app.git
+</code></pre>
+<p>这一段表示子仓库的位置，以及子仓库的远程仓库的地址。</p>
+<p>当我们删除子仓库并且commit之后，这个文件和这个子仓库有关的部分就会消失。</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

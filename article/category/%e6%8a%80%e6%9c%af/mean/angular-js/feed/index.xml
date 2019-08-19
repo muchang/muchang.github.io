@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Angular.js &#8211; Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/article/category/%E6%8A%80%E6%9C%AF/mean/angular-js/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>为什么Angular.js路由之后的URL中会出现&#8217;/#/&#8217;</title>
+		<link>/article/100</link>
+				<pubDate>Fri, 06 Nov 2015 13:20:41 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[Angular.js]]></category>
+
+		<guid isPermaLink="false">/?p=100</guid>
+				<description><![CDATA[这是Angular.js为了区分服务器路由和Angular.js 路由而加的前缀。比如说，如果在服务器上有一个 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>这是Angular.js为了区分服务器路由和Angular.js 路由而加的前缀。比如说，如果在服务器上有一个路由是&#8217;/app/helloworld&#8217;，在Angular.js中也设置了一个&#8217;/app/helloworld&#8217;，那么你在访问这个地址的时候，就不知道到底是访问服务器路由还是Angular.js路由了，如果想解决这个问题，可以参考如下链接：</p>
+<p><a href="http://blog.fens.me/angularjs-url/">AngularJS去掉的URL里的#号</a></p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

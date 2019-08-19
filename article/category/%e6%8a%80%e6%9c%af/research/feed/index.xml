@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Research &#8211; Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/article/category/%E6%8A%80%E6%9C%AF/research/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>Repost: How to do Research</title>
+		<link>/article/90</link>
+				<pubDate>Wed, 04 Nov 2015 08:50:36 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[Research]]></category>
+
+		<guid isPermaLink="false">/?p=90</guid>
+				<description><![CDATA[I have find a wonderful article about How to do Researc [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>I have find a wonderful article about How to do Research, Here is the link:<br />
+<a href="http://staff.ustc.edu.cn/~whli/lab/htdrimal.pdf" target="_blank">How to do Research At the MIT AI Lab</a></p>
+<p><strong>Reading</strong></p>
+<p>If you are interested in a specific subfield, go to a senior grad student in that subfield and ask him what are the most important papers.</p>
+<p>You needn&#8217;t spend all your time reading all the journals about the field. Only a few are worth looking at.</p>
+<p>Three phases to reading one paper: first, see if there&#8217;s anything of interest in it at all. Second, find the part of the paper that has the good stuff. Finally, go back and read the whole paper through if it seems worthwhile.</p>
+<p>Ask question, for example: How can I use this? Does this really do what the author claims?</p>
+<p>Figure out: the motivation, the choices the authors made, whether the assumptions and formalization are realistic, what directions the work suggests, the problem lying just over the horizon, the patterns of difficulty that keep coming up in the author&#8217;s research program, the political points the paper may be aimed at.</p>
+<p>Try implementing toy versions of the programs being described.</p>
+<p><strong>Getting connected</strong><br />
+To be a cool man who hardly ever learn about their subfield form published journal articles, but find out about the new idea from a conference or much more likely through the Secret Paper Passing.</p>
+<p>Here some tips:</p>
+<ul>
+<li>Get in e-mails lists which discuss your subfields.</li>
+<li>if someone say &#8220;Have you read X?&#8221; when you talk about an idea, READ IT!</li>
+<li>Share exciting papers to the people who will be interested in.</li>
+<li>Have meeting every week or two to discuss a paper that everyone has read.</li>
+<li>Read other people&#8217;s desks, if they don&#8217;t mind</li>
+<li>Read other people&#8217;s cabinets, if they don&#8217;t mind</li>
+<li>Distribute copies of a draft of it to people who are likely to be interesting.</li>
+<li>Send copies to everyone you think might be interested, when you finish a paper.</li>
+<li>Make yourself the bridge between two groups of interesting people working on related problem</li>
+<li>Make a references log or a references graph</li>
+</ul>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

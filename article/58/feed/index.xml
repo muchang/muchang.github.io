@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《OS X &#8220;library not found for -lgcc_s.10.5&#8221; 错误》的评论	</title>
+	<atom:link href="/article/58/feed" rel="self" type="application/rss+xml" />
+	<link>/article/58</link>
+	<description></description>
+	<lastBuildDate>
+	Sun, 08 Nov 2015 06:50:23 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				作者：muchang				</title>
+				<link>/article/58/comment-page-1#comment-14</link>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+		<pubDate>Sun, 08 Nov 2015 06:50:23 +0000</pubDate>
+		<guid isPermaLink="false">/?p=58#comment-14</guid>
+					<description><![CDATA[谢谢！]]></description>
+		<content:encoded><![CDATA[<p>谢谢！</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				作者：Ching Wan				</title>
+				<link>/article/58/comment-page-1#comment-13</link>
+		<dc:creator><![CDATA[Ching Wan]]></dc:creator>
+		<pubDate>Sat, 07 Nov 2015 15:32:22 +0000</pubDate>
+		<guid isPermaLink="false">/?p=58#comment-13</guid>
+					<description><![CDATA[You are my superman!]]></description>
+		<content:encoded><![CDATA[<p>You are my superman!</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				作者：muchang				</title>
+				<link>/article/58/comment-page-1#comment-12</link>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+		<pubDate>Tue, 03 Nov 2015 07:01:42 +0000</pubDate>
+		<guid isPermaLink="false">/?p=58#comment-12</guid>
+					<description><![CDATA[Thanks for your reply!]]></description>
+		<content:encoded><![CDATA[<p>Thanks for your reply!</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				作者：youngkyu				</title>
+				<link>/article/58/comment-page-1#comment-11</link>
+		<dc:creator><![CDATA[youngkyu]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2015 16:27:05 +0000</pubDate>
+		<guid isPermaLink="false">/?p=58#comment-11</guid>
+					<description><![CDATA[Thank you! it works!!!!!!! :)]]></description>
+		<content:encoded><![CDATA[<p>Thank you! it works!!!!!!! 🙂</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

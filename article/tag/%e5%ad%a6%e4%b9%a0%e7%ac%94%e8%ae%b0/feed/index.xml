@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>学习笔记 &#8211; Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/article/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>《Material design 指导手册》学习笔记</title>
+		<link>/article/44</link>
+				<pubDate>Sun, 11 Oct 2015 06:16:52 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[UI]]></category>
+		<category><![CDATA[学习笔记]]></category>
+
+		<guid isPermaLink="false">/?p=44</guid>
+				<description><![CDATA[参考资料: Material design 指导手册 大致时间：显示距离现在多久，不要结合多个时间单位（例如： [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>参考资料:<br />
+<a href="http://pan.baidu.com/s/1c08ch92" target="_blank">Material design 指导手册</a></p>
+<p><b>大致时间：</b>显示距离现在多久，不要结合多个时间单位（例如：1小时30分）。只需要显示最大的时间单位即可（例如：1小时）。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>《iOS人机界面准则》学习笔记</title>
+		<link>/article/34</link>
+				<pubDate>Thu, 01 Oct 2015 17:32:07 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[UI]]></category>
+		<category><![CDATA[学习笔记]]></category>
+
+		<guid isPermaLink="false">/?p=34</guid>
+				<description><![CDATA[参考资料: iOS 人机界面准则（感谢知乎郎启旭翻译） iOS人机界面准则 半透明效果：可以提供情境，帮助用户 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>参考资料:<br />
+<a href="http://pan.baidu.com/s/1eQrIPzk" target="_blank">iOS 人机界面准则</a>（感谢知乎<a class="author name ng-binding" href="http://www.zhihu.com/people/langqixu" target="_blank">郎启旭</a>翻译）</p>
+<h2>iOS人机界面准则</h2>
+<p><strong>半透明效果：</strong>可以提供情境，帮助用户看到更多可用的内容，并给人一种短暂停留的暗示。</p>
+<p><strong>留白：</strong>留白会让重要内容和功能更为突出、更易于理解。同时，留白还可以传达一种安静平和的感觉，这会让 app 看上去更加专注和高效。</p>
+<p><strong>主题色：</strong>使用一种主题色来突出重点，并巧妙地暗示其交互性。同时，这会给 app 带来一致性的视觉主题。</p>
+<p><strong>无边框按钮：</strong>在 iOS 7中，所有的条栏按钮都没有边框。无边框按钮会在按钮的内容区域内使用情境、颜色和一个动作导向的标题来暗示其交互性。如果合适，还可以通过显示纤细的边框或者浅色背景来让按钮更加突出。</p>
+<p><strong>启动图像：</strong>启动图像尽量是首屏的一部分，这样可以给用户一个启动很快的感觉。如果你认为下面这些准则会导 致一个朴素、无趣的启动图像，你说对了。请记住，启动画面并不是一个供你艺术表达的机会。它的唯一目的是让用户认为你的 app 启动迅速并已准备就绪。例如，「设置」和「天气」都提供了一个和静态背景图差不多的启动画面。</p>
+<p><strong>可点击控件：</strong>可点击控件的点击区域不小于 44 x 44 点。</p>
+<p><strong>滚动：</strong>用户不应需要滚动才读到重要文本，或者放大图片才能看到主要内容。</p>
+<p><strong>不一致样式：</strong>通常来说，拥有相似功能的元素看上去也应该很像。用户常常会认为那些他们所看到的不一致背后必定富有深意，然后花时间去理解它们。</p>
+<p><strong>前往页面的路径唯一：</strong>如果用户需要多种情境中查看某个页面，请考虑使用临时视图（例如模态视图、操作列表或警告框）。</p>
+<p><strong>模态：</strong>非常需要吸引用户注意，必须完成自包含任务（或明确放弃），以避免让用户的数据处于不明确状态。用户在进入模态情境时会忽略他们的主要任务。在创建一个涉及层级视图的模态任务时需要尤为谨慎，因为用户会感到迷茫以及忘记如何原路返回。当用户退出模态视图时，他们通常会知道其任务会被结束。</p>
+<p><strong>主题色：</strong>会给用户以强烈的交互性视觉指示，尤其是 在那些没有大量使用其他颜色的 app 中。</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

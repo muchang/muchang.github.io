@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>paper &#8211; Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/article/category/%E6%8A%80%E6%9C%AF/paper/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>What is Symbolic Execution?</title>
+		<link>/article/105</link>
+				<pubDate>Mon, 09 Nov 2015 14:02:09 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[paper]]></category>
+
+		<guid isPermaLink="false">/?p=105</guid>
+				<description><![CDATA[Instead of executing a program on a set of sample input [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Instead of executing a program on a set of sample inputs, Symbolic Execution use symbolic values for inputs which could mean a set of classes inputs. It indicate that we needn&#8217;t execute a program with a large number of normal test cases, but choose some test cases representatives.<br />
+Now, we give a simple example:</p>
+<pre><code>
+int i = read();
+if (i&gt;0) {
+  i = 0;
+}
+print("finish");
+</code></pre>
+<p>There is a important concept called &#8220;path condition&#8221; means if you want to go through the path, you should satisfy the condition.<br />
+In our example, first we assume read() return symbolic &#8220;X&#8221;, we could find that i = X. And we meet the IF statement, what should we do? we shall check IF statement &#8220;forkable&#8221; or not. if the statement is &#8220;forkable&#8221;, we fork execution into two &#8220;parallel&#8221; execution, if not, we just go single side. The two &#8220;parallel&#8221; execution have they own &#8220;path condition&#8221;: ( true &amp;&amp; X &gt; 0 ) and ( true &amp;&amp; (!X &gt; 0) ).  (true)  is the original path condition.<br />
+After we find out all path conditions, we use Constraint Solver to figure out some representative values for each path conditions and use these values to test program.<br />
+In our example, Constraint Solver could figure out X = 1 for ( true &amp;&amp; X &gt; 0 ) and X = -1 for ( true &amp;&amp; (!X &gt; 0) ). These test cases obviously cover our example program. we succeed!</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Data Flow Testing learning notes</title>
+		<link>/article/85</link>
+				<pubDate>Tue, 03 Nov 2015 09:04:35 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[paper]]></category>
+
+		<guid isPermaLink="false">/?p=85</guid>
+				<description><![CDATA[What is Data Flow Testing Data Flow Testing is a way to [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong>What is Data Flow Testing</strong></p>
+<p>Data Flow Testing is a way to test a program. For a variable x, where we define variable x, called ld; where we use variable x, called lu. If there exists at least one path from ld to lu with no intermediate redefinitions, we call the ld and lu is a def-use pair. Data Flow Testing find approaches to coverage def-use pair as much as possible.</p>
+<p><strong>Precess</strong></p>
+<p>There are three process to complete a Data Flow Testing:<br />
+1. Data-flow Analysis<br />
+2. Test Data Generation<br />
+3. Coverage Tracking</p>
+<p><strong>Approaches to test data generation</strong></p>
+<p>1. Random Testing<br />
+Choose test inputs in random ways.</p>
+<p>2. Collateral Coverage-based Approach<br />
+Use the coverage of low level program entities (e.g.,statements or branches) to infer the coverage of high level entities (e.g., def-use pairs).Also could identify a minimal set of def-use pairs such that the paths covering these pairs could cover all the pairs in the program.</p>
+<p>3. Search-based Testing<br />
+The problem of test data can be interpreted as a search problem in which it searches for desired values from program input domains to fulfill test requirements.</p>
+<p>4. Symbolic Execution<br />
+Use symbolic values instead of concrete values as program input.There two type of Symbolic Execution: Static Symbolic Execution and Dynamic Symbolic Execution.Static Symbolic.Static Symbolic Execution is based on control flow graph (CFG), while the Dynamic Symbolic is based on execution path.</p>
+<p>5. Model Checking<br />
+A model checker will search the entire state space of the system and check whether the property is violated or not.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

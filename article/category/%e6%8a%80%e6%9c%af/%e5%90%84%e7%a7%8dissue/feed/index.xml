@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>各种issue &#8211; Chengyu Zhang&#039;s Homepage</title>
+	<atom:link href="/article/category/%E6%8A%80%E6%9C%AF/%E5%90%84%E7%A7%8Dissue/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>
+	Sat, 03 Aug 2019 21:35:22 +0000	</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+	<item>
+		<title>什么是UEFI和legacy模式？</title>
+		<link>/article/132</link>
+				<pubDate>Wed, 02 Dec 2015 10:53:32 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=132</guid>
+				<description><![CDATA[UEFI是一种新型的boot模式，它能够给BIOS更高的安全性，相应的，也就无法通过easyESD之类的软件来 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>UEFI是一种新型的boot模式，它能够给BIOS更高的安全性，相应的，也就无法通过easyESD之类的软件来修改电脑的启动引导了。如果我们要解决这个问题，我们可以在电脑开机时狂按setup功能键（在Dell机子上通常是F2），进入boot菜单，将boot的模式由UEFI换成legacy（也就是传统模式）就可以正常的修改电脑的启动引导了。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>在javascript中，如何将字符串转换为JSON格式</title>
+		<link>/article/130</link>
+				<pubDate>Sun, 29 Nov 2015 08:50:15 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=130</guid>
+				<description><![CDATA[只需使用JSON.parse即可，例： var jsonObject = JSON.parse('{"Hell [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>只需使用JSON.parse即可，例：</p>
+<pre><code>
+var jsonObject = JSON.parse('{"Hello":"world"}');
+</code></pre>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>The box &#8216;ubuntu/trusty64&#8217; could not be found.</title>
+		<link>/article/126</link>
+				<pubDate>Thu, 19 Nov 2015 12:32:54 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=126</guid>
+				<description><![CDATA[Problem If you meet &#8216;The box &#8216;ubuntu/trusty [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong>Problem</strong></p>
+<p>If you meet &#8216;The box &#8216;ubuntu/trusty64&#8242; could not be found.&#8217;, when you use vagrant.</p>
+<p><strong>solution</strong></p>
+<p>Remove the vagrant on you system, and download the latest  version of vagrant on</p>
+<p><a href="https://www.vagrantup.com/downloads.html">https://www.vagrantup.com/downloads.html</a></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>如何解决一个git仓库中嵌套一个git仓库的问题</title>
+		<link>/article/122</link>
+				<pubDate>Sat, 14 Nov 2015 10:28:02 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+		<category><![CDATA[未分类]]></category>
+
+		<guid isPermaLink="false">/?p=122</guid>
+				<description><![CDATA[问题 如果在一个git仓库中嵌套了一个git仓库，那么被嵌套的git仓库的改动，不能被大git仓库检测到。 即 [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong>问题</strong></p>
+<p>如果在一个git仓库中嵌套了一个git仓库，那么被嵌套的git仓库的改动，不能被大git仓库检测到。<br />
+即：仓库A的代码中包含仓库B，A不会检测到B的改动。但是我们常常会在代码中引入其他仓库，那应该怎么解决呢？</p>
+<p><strong>解决方案</strong></p>
+<p>我们可以使用submodule，我们在引入子仓库时，使用如下命令即可：</p>
+<pre><code>
+git submodule add https://github.com/chaconinc/DbConnector
+</code></pre>
+<p>作用类似git clone，但是他会在父仓库的下面新建.gitmodules文件，并且包含以下内容</p>
+<pre><code>
+[submodule "apps/firstApp"]
+	path = apps/firstApp
+	url = https://github.com/muchang/mean-seed-app.git
+</code></pre>
+<p>这一段表示子仓库的位置，以及子仓库的远程仓库的地址。</p>
+<p>当我们删除子仓库并且commit之后，这个文件和这个子仓库有关的部分就会消失。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>如何在npm run script命令中使用参数</title>
+		<link>/article/120</link>
+				<pubDate>Sat, 14 Nov 2015 10:20:29 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=120</guid>
+				<description><![CDATA[首先，非常遗憾的告诉大家，只能在npm run script命令的末尾加入参数，不能在命令中加入参数。 那么， [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>首先，非常遗憾的告诉大家，只能在npm run script命令的末尾加入参数，不能在命令中加入参数。<br />
+那么，我们怎么在npm run script命令中加入参数呢，我们举个例子</p>
+<p>package.json</p>
+<pre><code>
+{ 
+  "name" : "foo", 
+  "config" : { "port" : "8080" }, 
+  "scripts" : { "moveTo" : "mv original" }
+}
+</code>
+</pre>
+<p>在package.json文件中我们写入这样的内容，我们可以看到,我们使用&#8221;moveTo&#8221;命令去表示&#8221;mv&#8221;。<br />
+在使用中，我们只能把original文件重命名（或移动）成其他文件，而不能把其他文件重命名（或移动）成original，即是只能将参数加入命令的末尾而不能加在中间。<br />
+如果我们执行</p>
+<pre><code>
+$ npm run moveTo -- target
+</code></pre>
+<p>相当于执行了</p>
+<pre><code>
+$ mv original target
+</code></pre>
+<p>明白了吗？</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>OS X &#8220;library not found for -lgcc_s.10.5&#8221; 错误</title>
+		<link>/article/58</link>
+				<comments>/article/58#comments</comments>
+				<pubDate>Sat, 17 Oct 2015 06:08:10 +0000</pubDate>
+		<dc:creator><![CDATA[muchang]]></dc:creator>
+				<category><![CDATA[各种issue]]></category>
+
+		<guid isPermaLink="false">/?p=58</guid>
+				<description><![CDATA[问题原因 苹果将libgcc*.dylib弃用，转而使用libSystem.B.dylib。 解决方案 将li [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong>问题原因</strong></p>
+<p>苹果将libgcc*.dylib弃用，转而使用libSystem.B.dylib。</p>
+<p><strong>解决方案</strong></p>
+<p>将libgcc*.dylib与libSystem.B.dylib之间建立连接</p>
+<pre><code>$ cd /usr/local/lib
+$ sudo ln -s ../../lib/libSystem.B.dylib libgcc_s.10.5.dylib
+$ sudo ln -s ../../lib/libSystem.B.dylib libgcc_s.10.4.dylib</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/article/58/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+	</channel>
+</rss>
