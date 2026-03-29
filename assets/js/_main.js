@@ -6,7 +6,7 @@
 // "system". Default is "system".
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
+  return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "light" : themeSetting;
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
