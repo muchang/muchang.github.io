@@ -7,23 +7,23 @@ author_profile: true
 
 ## Selected Publications ([Google Scholar](https://scholar.google.com/citations?user=t87xiP8AAAAJ&hl=en), [dblp](https://dblp.org/pid/01/7515-1.html))
 
-1. [Red Teaming LLMs via Linguistic-Aware Fuzzing](). ![](./images/new.gif)  
+1. [Red Teaming LLMs via Linguistic-Aware Fuzzing](). ![](/images/new.gif)  
    *Shuai Yuan, Nian Luo, Jingling Sun, Yihao Huang, and **Chengyu Zhang***.   
    In Proceedings of *[FSE 2026](https://conf.researchr.org/home/fse-2026)*.
 
-2. [Understanding and Mitigating Hallucinations in Industrial LLM-based Unit Test Generation](). ![](./images/new.gif)  
+2. [Understanding and Mitigating Hallucinations in Industrial LLM-based Unit Test Generation](). ![](/images/new.gif)  
    *Yanlun Tu, Ziyue Zhou, Cheng Xu, Jingling Sun, Shuai Feng, and **Chengyu Zhang***.   
    In Proceedings of *[FSE 2026](https://conf.researchr.org/home/fse-2026)*, Industry Paper.
 
-3. [Diagnosing Performance Differences in Model Checkers via Runtime-Guided Problem Generation](https://repository.lboro.ac.uk/ndownloader/files/62142888/1). ![](./images/new.gif)  
+3. [Diagnosing Performance Differences in Model Checkers via Runtime-Guided Problem Generation](https://repository.lboro.ac.uk/ndownloader/files/62142888/1). ![](/images/new.gif)  
    *Yibo Dong, Yicong Xu, Wenjing Deng, Yu Chen, Xiaoyu Zhang, Jianwen Li, **Chengyu Zhang**, and Geguang Pu*.   
    In Proceedings of *[ASE 2025](https://conf.researchr.org/home/ase-2025)*.
 
-4. [Validating Soundness and Completeness in Pattern-Match Coverage Analyzers](https://dl.acm.org/doi/pdf/10.1145/3763171). ![](./images/new.gif)  
+4. [Validating Soundness and Completeness in Pattern-Match Coverage Analyzers](https://dl.acm.org/doi/pdf/10.1145/3763171). ![](/images/new.gif)  
    *Cyril Moser, Thodoris Sotiropoulos, **Chengyu Zhang** and Zhendong Su*.   
    In Proceedings of *[SPLASH/OOPSLA 2025](https://2024.splashcon.org/track/splash-2024-oopsla/)*.
 
-5. [Finding Logic Bugs in Spatial Database Engines via Affine Equivalent Inputs](https://arxiv.org/abs/2410.12496). ![](./images/new.gif)  
+5. [Finding Logic Bugs in Spatial Database Engines via Affine Equivalent Inputs](https://arxiv.org/abs/2410.12496). ![](/images/new.gif)  
    *Wenjing Deng, Qiuyang Mang, **Chengyu Zhang** and Manuel Rigger*.   
    In Proceedings of *[SIGMOD 2025](https://2025.sigmod.org/)* (acceptance rate: 12%, 30/254).
 
@@ -48,7 +48,7 @@ author_profile: true
     In Proceedings of *[ISSTA 2023](https://conf.researchr.org/home/issta-2023)*. \[ [Artifact](https://zenodo.org/record/7976809) \]
 
 11. [FuzzBtor2: A Random Generator of Word-Level Model Checking Problems in Btor2 Format](https://link.springer.com/chapter/10.1007/978-3-031-30820-8_5).  
-    *Shengping Xiao, **Chengyu Zhang**, Jianwen Li, Geguang Pu*. 
+    *Shengping Xiao, **Chengyu Zhang**, Jianwen Li, Geguang Pu*.   
     In Proceedings of *[TACAS 2023](https://etaps.org/2023/accepted-papers)*. \[ [Tool](https://github.com/CoriolisSP/FuzzBtor2) \]
 
 12. [Generative Type-Aware Mutation for Testing SMT Solvers](https://dl.acm.org/doi/10.1145/3485529).  
@@ -56,7 +56,7 @@ author_profile: true
     In Proceedings of *[SPLASH/OOPSLA 2021](https://2021.splashcon.org/)*. \[ [Tool](https://github.com/testsmt/yinyang) \]
 
 13. [Feedback-Guided Circuit Structure Mutation for Testing Hardware Model Checkers](https://ieeexplore.ieee.org/document/9643509).  
-    ***Chengyu Zhang**, Minquan Sun, Jianwen Li, Ting Su and Geguang Pu*. 
+    ***Chengyu Zhang**, Minquan Sun, Jianwen Li, Ting Su and Geguang Pu*.   
     In Proceedings of *[ICCAD 2021](https://iccad.com/index.php)* (acceptance rate: 23.5%, 121/514). \[ [Tool](https://github.com/muchang/Hammer) \]
 
 14. [On the Unusual Effectiveness of Type-aware Operator Mutations for Testing SMT Solvers](https://dl.acm.org/doi/10.1145/3428261).  
