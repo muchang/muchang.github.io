@@ -1,15 +1,14 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Chengyu Zhang is a Lecturer (Assistant Professor) in the [Department of Computer Science](https://www.lboro.ac.uk/departments/compsci/) at [Loughborough University](https://www.lboro.ac.uk/). Prior to this, he was a Postdoctoral Researcher at [ETH Zurich](https://www.ethz.ch/en.html) (2022–2025), where he worked with [Prof. Zhendong Su](https://people.inf.ethz.ch/suz/). He received both his Ph.D. and B.S. degrees with honors from [East China Normal University (ECNU)](http://english.ecnu.edu.cn/) (2012–2021), under the supervision of [Prof. Geguang Pu](https://ggpu-ecnu.github.io/). During his doctoral studies, he was also a visiting student at [ETH Zurich](https://www.ethz.ch/en.html) (2018–2019). Earlier in his career, he co-founded [Shanghai Neoclub Information Technology Co., Ltd.](http://www.neoclub.cn/) (2015–2016).
+Chengyu Zhang is a Lecturer (Assistant Professor) in the [Department of Computer Science](https://www.lboro.ac.uk/departments/compsci/) at [Loughborough University](https://www.lboro.ac.uk/). His research interests are in:
 
-His research interests are in:
 * Software Engineering
 * Programming Languages
 * Formal Methods
@@ -19,9 +18,11 @@ He is currently working on *software reliability* and *trustworthy AI reasoning*
 **[Project Yin-Yang for SMT Solver Testing](https://testsmt.github.io/)**: [Z3/CVC4 bugs: **1,667** (total) / **1,244** (fixed)]  
 [Reports: [YinYang](https://testsmt.github.io/yinyang_bugs.html), [OpFuzz](https://testsmt.github.io/opfuzz_bugs.html), [TypeFuzz](https://testsmt.github.io/typefuzz_bugs.html)]
 
-![](./wp-content/uploads/2018/03/new.gif) ***The call for applications for a fully funded PhD position (starting Fall 2026) is now [open](https://www.lboro.ac.uk/study/postgraduate/research-degrees/phd-opportunities/trustworthy-navigation-systems-eco-routing/). Feel free to contact me for an informal chat before submitting your application. The deadline is 19 April 2026.***
+![](./images/new.gif) ***The call for applications for a fully funded PhD position (starting Fall 2026) is now [open](https://www.lboro.ac.uk/study/postgraduate/research-degrees/phd-opportunities/trustworthy-navigation-systems-eco-routing/). Feel free to contact me for an informal chat before submitting your application. The deadline is 19 April 2026.***
 
-![](./wp-content/uploads/2018/03/new.gif) ***I am looking for <span style="color:red">Ph.D. and visiting students</span>, with support available through university studentship (two positions for Fall 2026), CSC scholarships (two positions for Fall 2026), or self-funding (anytime). If you are passionate about research and interested in working with me, please feel free to send me an email regardless of your background. I will be happy to chat with you.***
+![](./images/new.gif) ***I am looking for <span style="color:red">Ph.D. and visiting students</span>, with support available through university studentship (two positions for Fall 2026), CSC scholarships (two positions for Fall 2026), or self-funding (anytime). If you are passionate about research and interested in working with me, please feel free to send me an email regardless of your background. I will be happy to chat with you.***
+
+Before being a faculty, he was a Postdoctoral Fellow at [ETH Zurich](https://www.ethz.ch/en.html) (2022–2025), where he worked with [Prof. Zhendong Su](https://people.inf.ethz.ch/suz/). He received both his Ph.D. and B.S. degrees with honors from [East China Normal University (ECNU)](http://english.ecnu.edu.cn/) (2012–2021), under the supervision of [Prof. Geguang Pu](https://ggpu-ecnu.github.io/). During his doctoral studies, he was also a visiting student at [ETH Zurich](https://www.ethz.ch/en.html) (2018–2019). Earlier in his career, he co-founded [Shanghai Neoclub Information Technology Co., Ltd.](http://www.neoclub.cn/) (2015–2016).
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
