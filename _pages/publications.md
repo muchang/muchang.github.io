@@ -66,7 +66,7 @@ author_profile: true
 15. [Validating SMT Solvers via Semantic Fusion](https://dl.acm.org/doi/10.1145/3385412.3385985).  
     *Dominik Winterer\*, **Chengyu Zhang\*** and Zhendong Su*. (\*: Equal contributions)  
     In Proceedings of *[PLDI 2020](https://conf.researchr.org/home/pldi-2020)*. \[ [Slides](https://testsmt.github.io/slides/pldi20-semantic-fusion.pdf) / [Video abstract](https://www.youtube.com/watch?list=PLyrlk8Xaylp5mvxARtX5ncjy9p4XAjwd&time_continue=1&v=JFu8cJYbxBI&feature=emb_logo) / [Tool](https://github.com/testsmt/yinyang) \]  
-    🏆 <span style="color:red">**PLDI Distinguished Paper Award**</span>
+    🏆 <span style="color:firebrick">**PLDI Distinguished Paper Award**</span>
 
 16. [Detecting Nondeterministic Payment Bugs in Ethereum Smart Contracts](https://dl.acm.org/doi/10.1145/3360615).  
     *Shuai Wang, **Chengyu Zhang** and Zhendong Su*.  
