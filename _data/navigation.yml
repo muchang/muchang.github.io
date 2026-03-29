@@ -8,16 +8,16 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
+  - title: "Chengyu's Publications"
     url: /publications/
 
-  - title: "Services"
+  - title: "Chengyu's Services"
     url: /services/    
 
-  - title: "Teaching"
+  - title: "Chengyu's Teaching"
     url: /teaching/    
     
-  - title: "Awards"
+  - title: "Chengyu's Awards"
     url: /grants/
         
   # - title: "Blog Posts"
