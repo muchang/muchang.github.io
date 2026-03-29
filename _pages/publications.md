@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-### Selected Publications ([Google Scholar](https://scholar.google.com/citations?user=t87xiP8AAAAJ&hl=en), [dblp](https://dblp.org/pid/01/7515-1.html))
+## Selected Publications ([Google Scholar](https://scholar.google.com/citations?user=t87xiP8AAAAJ&hl=en), [dblp](https://dblp.org/pid/01/7515-1.html))
 
 1. [Red Teaming LLMs via Linguistic-Aware Fuzzing](). ![](./wp-content/uploads/2018/03/new.gif)  
    *Shuai Yuan, Nian Luo, Jingling Sun, Yihao Huang, and **Chengyu Zhang***. 
