@@ -22,7 +22,7 @@ author_profile: true
 - 2022: [USENIX OSDI and ATC](https://sysartifacts.github.io/osdi2022/organizers)
 
 ## Artifact Evaluation Committee Member
-- 2022: [ECOOP](), [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/call-for-artifacts)
+- 2022: [ECOOP](https://2022.ecoop.org/track/ecoop-2022-artifacts), [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/call-for-artifacts)
 - 2021: [OSDI](https://www.usenix.org/conference/osdi21/call-for-artifacts), [ISSTA](https://conf.researchr.org/committee/issta-2021/issta-2021-artifact-evaluation-artifact-evaluation-committee), [ECOOP](https://2021.ecoop.org/committee/ecoop-2021-ecoop-artifacts-artifact-evaluation-committee), [PLDI](https://pldi21.sigplan.org/committee/pldi-2021-PLDI-Research-Artifacts-artifact-evaluation-committee)
 - 2020: [OOPSLA](https://2020.splashcon.org/committee/splash-2020-Artifacts-artifact-evaluation-committee), [ECOOP](https://2020.ecoop.org/committee/ecoop-2020-artifacts-artifact-evaluation-committee)
 
