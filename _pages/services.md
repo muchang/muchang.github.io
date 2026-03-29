@@ -12,11 +12,20 @@ author_profile: true
 - 2023: [ESEC/FSE](https://2023.esec-fse.org/committee/fse-2023-research-papers-program-committee), [ECOOP](https://2023.ecoop.org/committee/ecoop-2023-research-papers-program-committee), [FUZZING](https://conf.researchr.org/track/fuzzing-2023/fuzzing-2023)
 - 2022: [FUZZING](https://fuzzingworkshop.github.io/)
 
-## Artifact Evaluation Co-Chair
-- 2022: [USENIX OSDI and ATC](https://sysartifacts.github.io/osdi2022/organizers)
-
 ## Journal Reviewer
 - [IEEE Transactions on Software Engineering (TSE)](https://www.computer.org/csdl/journal/ts), 2022 - 2025
 - [ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/tosem), 2020 - 2025
 - [ACM Transactions on Programming Languages and Systems (TOPLAS)](https://dl.acm.org/journal/toplas), 2024 - 2025
-- [ACM Computing Surveys (CUSR)](https://dl.acm.org/journal/csur), 2025
+- [ACM Computing Surveys (CSUR)](https://dl.acm.org/journal/csur), 2025
+
+## Artifact Evaluation Co-Chair
+- 2022: [USENIX OSDI and ATC](https://sysartifacts.github.io/osdi2022/organizers)
+
+## Artifact Evaluation Committee Member
+- 2022: [ECOOP](), [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/call-for-artifacts)
+- 2021: [OSDI](https://www.usenix.org/conference/osdi21/call-for-artifacts), [ISSTA](https://conf.researchr.org/committee/issta-2021/issta-2021-artifact-evaluation-artifact-evaluation-committee), [ECOOP](https://2021.ecoop.org/committee/ecoop-2021-ecoop-artifacts-artifact-evaluation-committee), [PLDI](https://pldi21.sigplan.org/committee/pldi-2021-PLDI-Research-Artifacts-artifact-evaluation-committee)
+- 2020: [OOPSLA](https://2020.splashcon.org/committee/splash-2020-Artifacts-artifact-evaluation-committee), [ECOOP](https://2020.ecoop.org/committee/ecoop-2020-artifacts-artifact-evaluation-committee)
+
+
+
+
