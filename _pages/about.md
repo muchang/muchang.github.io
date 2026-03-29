@@ -9,7 +9,7 @@ redirect_from:
 
 Chengyu Zhang is a Lecturer (equivalent to an Assistant Professor in the US) in the [Department of Computer Science](https://www.lboro.ac.uk/departments/compsci/) at [Loughborough University](https://www.lboro.ac.uk/). His research spans ***software engineering***, ***programming languages***, and ***formal methods***, with a focus on providing advanced testing and verification solutions to ensure the reliability of modern software. 
 
-His research has uncovered over 2,000 bugs in real-world software systems and has resulted in more than 15 papers in top-tier venues, such as ICSE, PLDI, and SIGMOD. He regularly served as a program committee member for software engineering conferences, such as ICSE, FSE, ASE, and ISSTA, and a reviewer for for TOSEM, TSE, TOPLAS, TKDE, and CSUR. His work has been recognised by a PLDI Distinguished Paper Award and a Google Open Source Peer Bonus, and supported by an Amazon Research Award.  
+His research has uncovered over 2,000 bugs in real-world software systems and has resulted in more than 15 papers in top-tier venues, such as ICSE, PLDI, and SIGMOD. He regularly served as a program committee member for software engineering conferences, such as ICSE, FSE, ASE, and ISSTA, and a reviewer for TOSEM, TSE, TOPLAS, TKDE, and CSUR. His work has been recognised by a PLDI Distinguished Paper Award and a Google Open Source Peer Bonus, and supported by an Amazon Research Award.  
 
 
 **[Project Yin-Yang for SMT Solver Testing](https://testsmt.github.io/)**: [Z3/CVC4 bugs: **1,667** (total) / **1,244** (fixed)]  
