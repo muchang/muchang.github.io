@@ -4,7 +4,6 @@ title: ""
 permalink: /teaching/
 author_profile: true
 ---
-
 ## Module Leader
 * COP924 Software Engineering (MSc Computer Science, Loughborough University, Fall 2025)
 
