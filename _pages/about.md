@@ -15,7 +15,7 @@ His research has uncovered over 2,000 bugs in real-world software systems and ha
 **[Project Yin-Yang for SMT Solver Testing](https://testsmt.github.io/)**: [Z3/CVC4 bugs: **1,667** (total) / **1,244** (fixed)]  
 [Reports: [YinYang](https://testsmt.github.io/yinyang_bugs.html), [OpFuzz](https://testsmt.github.io/opfuzz_bugs.html), [TypeFuzz](https://testsmt.github.io/typefuzz_bugs.html)]
 
-![](/images/new.gif) *The call for applications for a <span style="color:firebrick">fully funded PhD position</span> (starting Fall 2026) is now [open](https://www.lboro.ac.uk/study/postgraduate/research-degrees/phd-opportunities/trustworthy-navigation-systems-eco-routing/). Feel free to contact me for an informal chat before submitting your application. The deadline is 19 April 2026.*
+![](/images/new.gif) *The call for a <span style="color:firebrick">fully funded PhD position</span> (starting Fall 2026) is now [open](https://www.lboro.ac.uk/study/postgraduate/research-degrees/phd-opportunities/trustworthy-navigation-systems-eco-routing/). Feel free to contact me for an informal chat before submitting your application. The deadline is 19 April 2026.*
 
 ![](/images/new.gif) *I am looking for <span style="color:firebrick">Ph.D. and visiting students</span>, with support available through university studentship (two positions for Fall 2026), CSC scholarships (two positions for Fall 2026), or self-funding (anytime). If you are passionate about research and interested in working with me, please feel free to send me an email. I will be happy to chat with you.*
 
