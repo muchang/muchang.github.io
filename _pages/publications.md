@@ -15,7 +15,7 @@ author_profile: true
    *Yanlun Tu, Ziyue Zhou, Cheng Xu, Jingling Sun, Shuai Feng, and **Chengyu Zhang***.   
    In Proceedings of *[FSE 2026](https://conf.researchr.org/home/fse-2026)*, Industry Paper.
 
-3. [Diagnosing Performance Differences in Model Checkers via Runtime-Guided Problem Generation](https://repository.lboro.ac.uk/ndownloader/files/62142888/1). ![](/images/new.gif)  
+3. [Diagnosing Performance Differences in Model Checkers via Runtime-Guided Problem Generation](https://dl.acm.org/doi/10.1109/ASE63991.2025.00019). ![](/images/new.gif)  
    *Yibo Dong, Yicong Xu, Wenjing Deng, Yu Chen, Xiaoyu Zhang, Jianwen Li, **Chengyu Zhang**, and Geguang Pu*.   
    In Proceedings of *[ASE 2025](https://conf.researchr.org/home/ase-2025)*.
 
