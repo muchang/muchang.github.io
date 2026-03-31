@@ -12,10 +12,11 @@ author_profile: true
 - 2022: [FUZZING](https://fuzzingworkshop.github.io/)
 
 ## Journal Reviewer
-- [IEEE Transactions on Software Engineering (TSE)](https://www.computer.org/csdl/journal/ts), 2022 - 2025
 - [ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/tosem), 2020 - 2025
+- [IEEE Transactions on Software Engineering (TSE)](https://www.computer.org/csdl/journal/ts), 2022 - 2025
 - [ACM Transactions on Programming Languages and Systems (TOPLAS)](https://dl.acm.org/journal/toplas), 2024 - 2025
 - [ACM Computing Surveys (CSUR)](https://dl.acm.org/journal/csur), 2025
+- [IEEE Transactions on Knowledge and Data Engineering (TKDE)](https://www.computer.org/csdl/journal/tk), 2026
 
 ## Artifact Evaluation Co-Chair
 - 2022: [USENIX OSDI and ATC](https://sysartifacts.github.io/osdi2022/organizers)
