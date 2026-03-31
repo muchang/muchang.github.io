@@ -29,8 +29,8 @@ author:
   bio              : "Lecturer (Assistant Professor) in Software Engineering"
   location         : "United Kingdom"
   employer         : "Loughborough University"
-  uri              : # URL
-  email            : "c.zhang4 at lboro.ac.uk" 
+  uri              : "https://www.lboro.ac.uk/departments/compsci/staff/chengyu-zhang/"
+  email            : "c.zhang4@lboro.ac.uk" 
 
   # Academic websites
   academia         : # URL
