@@ -13,13 +13,13 @@ I am always looking for excellent students who are
 - **open-minded** and **collaborative**,
 - committed to **top-notch** work.
 
-Loughborough University is one of the [Top 10 Universities](https://www.thecompleteuniversityguide.co.uk/league-tables/rankings) in the UK, which has the [best campus and facilities](https://www.studentcrowd.com/page/best-universities-for-campus-and-facilities) and a supportive environment. The study duration for a PhD is 3–4 years. Loughborough is a beautiful and safe town with a relatively low living cost. 
+Loughborough University is one of the [Top 10 Universities](https://www.thecompleteuniversityguide.co.uk/league-tables/rankings) in the UK, which has the [best campus and facilities](https://www.studentcrowd.com/page/best-universities-for-campus-and-facilities) and a supportive environment. The study duration for a PhD is 3–4 years. Loughborough is a beautiful and safe town in the middle of England with a relatively low living cost. 
 
 If you are interested in a PhD student position at NERV Lab, please feel free to drop me an email (at c.zhang4 at lboro.ac.uk or dale.chengyu.zhang at gmail.com). I am also open to hosting academic visitors (students and faculty). Please also drop me an email if you are interested in visiting me. 
 
 ## Studentship Opportunities
 
-In the UK, PhD students are usually supported by studentships from different sources. Here are some studentship opportunities that are currently available with me: 
+In the UK, PhD students are usually supported by studentships from different funding sources. Here are some studentship opportunities that are currently available with me: 
 
 - **University Studentships**: I have a PhD studentship in spatial databases funded by the university starting in fall 2026. The application is now [open](https://www.lboro.ac.uk/study/postgraduate/research-degrees/phd-opportunities/trustworthy-navigation-systems-eco-routing/). The deadline is 19 April 2026.
 
