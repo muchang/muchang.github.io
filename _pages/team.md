@@ -4,7 +4,7 @@ title: ""
 permalink: /team/
 author_profile: true
 ---
-![](/images/nerv.png)
+<img src="../images/nerv.png" width="400">
 
 My research team at Loughborough University is named the Neuro-Symbolic Software Engineering and Reliable Verification (NERV) Lab. We are excited about tackling important, pressing, and difficult problems via principled, elegant, and practical solutions for ensuring the reliability of modern software. Our work is published routinely in top-tier venues, but more importantly, strives for conceptual elegance and practical impact.
 
