@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: ""
-permalink: /services/
+permalink: /team/
 author_profile: true
 ---
 ![](/images/nerv.png)
