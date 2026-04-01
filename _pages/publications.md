@@ -5,6 +5,19 @@ permalink: /publications/
 author_profile: true
 ---
 
+My research focuses on **automated test case generation** for complex systems with rich semantic inputs, including: 
+
+- Static Analyzers ([OOPSLA 2025](https://dl.acm.org/doi/pdf/10.1145/3763171), [FSE 2024](https://dl.acm.org/doi/10.1145/3660781)), 
+- Database Management Systems ([SIGMOD 2025](https://dl.acm.org/doi/10.1145/3698810), [ISSTA 2023](https://dl.acm.org/doi/10.1145/3597926.3598044)), 
+- Verifiers ([OOPSLA 2024](https://dl.acm.org/doi/10.1145/3689719), [TACAS 2023](https://link.springer.com/chapter/10.1007/978-3-031-30820-8_5), [ICCAD 2021](https://ieeexplore.ieee.org/document/9643509), [ESEC/FSE 2019](https://dl.acm.org/doi/10.1145/3338906.3338932)), 
+- SMT Solvers ([OOPSLA 2021](https://dl.acm.org/doi/10.1145/3485529), [OOPSLA 2020](https://dl.acm.org/doi/10.1145/3428261), [PLDI 2020](https://dl.acm.org/doi/10.1145/3385412.3385985)), and
+- LLMs ([FSE 2026]()). 
+
+I am also interested in **program analysis techniques** for:
+
+- Generating Unit Tests ([FSE Industry 2026](), [ICSE SEIP 2018](https://dl.acm.org/doi/10.1145/3183519.3183554)) and 
+- Verifying Smart Contracts ([OOPSLA 2019](https://dl.acm.org/doi/10.1145/3360615)).
+
 ## Selected Publications ([Google Scholar](https://scholar.google.com/citations?user=t87xiP8AAAAJ&hl=en), [dblp](https://dblp.org/pid/01/7515-1.html))
 
 1. [Red Teaming LLMs via Linguistic-Aware Fuzzing](). ![](/images/new.gif)  
@@ -23,7 +36,7 @@ author_profile: true
    *Cyril Moser, Thodoris Sotiropoulos, **Chengyu Zhang** and Zhendong Su*.   
    In Proceedings of *[SPLASH/OOPSLA 2025](https://2024.splashcon.org/track/splash-2024-oopsla/)*.
 
-5. [Finding Logic Bugs in Spatial Database Engines via Affine Equivalent Inputs](https://arxiv.org/abs/2410.12496). ![](/images/new.gif)  
+5. [Finding Logic Bugs in Spatial Database Engines via Affine Equivalent Inputs](https://dl.acm.org/doi/10.1145/3698810). ![](/images/new.gif)  
    *Wenjing Deng, Qiuyang Mang, **Chengyu Zhang** and Manuel Rigger*.   
    In Proceedings of *[SIGMOD 2025](https://2025.sigmod.org/)* (acceptance rate: 12%, 30/254).
 
