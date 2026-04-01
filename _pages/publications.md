@@ -9,7 +9,7 @@ My research focuses on **automated test case generation** for complex systems wi
 
 - Static Analyzers ([OOPSLA 2025](https://dl.acm.org/doi/pdf/10.1145/3763171), [FSE 2024](https://dl.acm.org/doi/10.1145/3660781)), 
 - Database Management Systems ([SIGMOD 2025](https://dl.acm.org/doi/10.1145/3698810), [ISSTA 2023](https://dl.acm.org/doi/10.1145/3597926.3598044)), 
-- Verifiers ([OOPSLA 2024](https://dl.acm.org/doi/10.1145/3689719), [TACAS 2023](https://link.springer.com/chapter/10.1007/978-3-031-30820-8_5), [ICCAD 2021](https://ieeexplore.ieee.org/document/9643509), [ESEC/FSE 2019](https://dl.acm.org/doi/10.1145/3338906.3338932)), 
+- Software and Hardware Verifiers ([OOPSLA 2024](https://dl.acm.org/doi/10.1145/3689719), [TACAS 2023](https://link.springer.com/chapter/10.1007/978-3-031-30820-8_5), [ICCAD 2021](https://ieeexplore.ieee.org/document/9643509), [ESEC/FSE 2019](https://dl.acm.org/doi/10.1145/3338906.3338932)), 
 - SMT Solvers ([OOPSLA 2021](https://dl.acm.org/doi/10.1145/3485529), [OOPSLA 2020](https://dl.acm.org/doi/10.1145/3428261), [PLDI 2020](https://dl.acm.org/doi/10.1145/3385412.3385985)), and
 - LLMs ([FSE 2026]()). 
 
