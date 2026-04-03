@@ -14,8 +14,8 @@ main:
   - title: "Team"
     url: /team/
 
-  - title: "Services"
-    url: /services/    
+  - title: "Service"
+    url: /service/    
 
   - title: "Teaching"
     url: /teaching/    

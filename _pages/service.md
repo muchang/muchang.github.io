@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: ""
-permalink: /services/
+permalink: /service/
 author_profile: true
 ---
 ## Program Committee
