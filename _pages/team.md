@@ -21,8 +21,6 @@ If you are interested in a PhD student position at NERV Lab, please feel free to
 
 In the UK, PhD students are usually supported by studentships from different funding sources. Here are some studentship opportunities that are currently available with me: 
 
-- **University Studentships**: I have a PhD studentship in spatial databases funded by the university starting in fall 2026. The application is now [open](https://www.lboro.ac.uk/study/postgraduate/research-degrees/phd-opportunities/trustworthy-navigation-systems-eco-routing/). The deadline is 19 April 2026.
-
 - **Darktrace Studentships**: I have a PhD studentship in the reliability of AI agents funded by [Darktrace](https://www.darktrace.com/) starting anytime. The application will be open soon. Please drop me an email if you are interested in this opportunity. 
 
 - **China Scholarship Council (CSC) Scholarships**: I am always open to supporting CSC scholarship applications. Loughborough University has a [joint program](https://www.lboro.ac.uk/study/postgraduate/fees-funding/research-degree-funding/china-scholarship-council/) opening in January every year. I would suggest you contact me a few months before the deadline to better plan (and maximize the possibility of) the application.
