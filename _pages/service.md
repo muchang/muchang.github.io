@@ -4,8 +4,13 @@ title: ""
 permalink: /service/
 author_profile: true
 ---
+## Artifact Evaluation Co-Chair
+- 2028: [PLDI]()
+- 2027: [PLDI]()
+- 2022: [USENIX OSDI and ATC](https://sysartifacts.github.io/osdi2022/organizers)
+
 ## Program Committee
-- 2027: [ICSE](https://conf.researchr.org/committee/icse-2027/icse-2027-research-track-program-committee), [FSE]()
+- 2027: [ICSE](https://conf.researchr.org/committee/icse-2027/icse-2027-research-track-program-committee), [FSE](https://conf.researchr.org/committee/fse-2027/fse-2027-papers-program-committee), [OOPSLA]() 
 - 2026: [ICSE](https://conf.researchr.org/committee/icse-2026/icse-2026-research-track-research-track), [ISSTA](https://conf.researchr.org/committee/issta-2026/issta-2026-research-papers-research-papers), [FSE](https://conf.researchr.org/committee/fse-2026/fse-2026-research-papers-program-committee), [SEFM](https://sefm-conference.github.io/2026/)
 - 2025: [ASE](https://conf.researchr.org/committee/ase-2025/ase-2025-papers-program-committee), [ISSTA Tool Demo](https://conf.researchr.org/track/issta-2025/issta-2025-tool-demonstrations)
 - 2024: [ASE](https://conf.researchr.org/track/ase-2024/ase-2024-research), [ISSTA/ECOOP Tool Demo](https://conf.researchr.org/track/issta-ecoop-2024/issta-ecoop-2024-tool-demonstrations), [FUZZING](https://fuzzingworkshop.github.io/)
@@ -18,9 +23,6 @@ author_profile: true
 - [ACM Transactions on Programming Languages and Systems (TOPLAS)](https://dl.acm.org/journal/toplas), 2024 - 2025
 - [ACM Computing Surveys (CSUR)](https://dl.acm.org/journal/csur), 2025
 - [IEEE Transactions on Knowledge and Data Engineering (TKDE)](https://www.computer.org/csdl/journal/tk), 2026
-
-## Artifact Evaluation Co-Chair
-- 2022: [USENIX OSDI and ATC](https://sysartifacts.github.io/osdi2022/organizers)
 
 ## Artifact Evaluation Committee Member
 - 2022: [ECOOP](https://2022.ecoop.org/track/ecoop-2022-artifacts), [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/call-for-artifacts)
