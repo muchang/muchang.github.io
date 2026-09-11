@@ -23,7 +23,7 @@ repository               : "muchang/muchang.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Photo-mini.jpg"
+  avatar           : "Photo-new.jpg"
   name             : "Chengyu Zhang"
   pronouns         : # example: "she/her"  
   bio              : "Lecturer (Assistant Professor) in Software Engineering"
