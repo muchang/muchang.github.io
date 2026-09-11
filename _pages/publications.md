@@ -7,7 +7,7 @@ author_profile: true
 
 My research focuses on **automated test case generation** for complex systems with rich semantic inputs, including: 
 
-- Static Analyzers ([OOPSLA 2025](https://dl.acm.org/doi/pdf/10.1145/3763171), [FSE 2024](https://dl.acm.org/doi/10.1145/3660781)), 
+- Static Analyzers ([OOPSLA 2025](https://dl.acm.org/doi/pdf/10.1145/3763171), [FSE 2024](https://dl.acm.org/doi/10.1145/3660781), [TOSEM 2026]()), 
 - Database Management Systems ([SIGMOD 2025](https://dl.acm.org/doi/10.1145/3698810), [ISSTA 2023](https://dl.acm.org/doi/10.1145/3597926.3598044)), 
 - Software and Hardware Verifiers ([OOPSLA 2024](https://dl.acm.org/doi/10.1145/3689719), [TACAS 2023](https://link.springer.com/chapter/10.1007/978-3-031-30820-8_5), [ICCAD 2021](https://ieeexplore.ieee.org/document/9643509), [ESEC/FSE 2019](https://dl.acm.org/doi/10.1145/3338906.3338932)), 
 - SMT Solvers ([OOPSLA 2021](https://dl.acm.org/doi/10.1145/3485529), [OOPSLA 2020](https://dl.acm.org/doi/10.1145/3428261), [PLDI 2020](https://dl.acm.org/doi/10.1145/3385412.3385985)), and
@@ -20,11 +20,15 @@ I am also interested in **program analysis techniques** for:
 
 ## Selected Publications ([Google Scholar](https://scholar.google.com/citations?user=t87xiP8AAAAJ&hl=en), [dblp](https://dblp.org/pid/01/7515-1.html))
 
-1. [Red Teaming LLMs via Linguistic-Aware Fuzzing](). ![](/images/new.gif)  
-   *Shuai Yuan, Nian Luo, Jingling Sun, Yihao Huang, and **Chengyu Zhang***.   
+1. [An Empirical Study of False Negatives and Positives of Static Code Analyzers From the Perspective of Historical Issues](). ![](/images/new.gif)  
+  Han Cui, Jingjing Liang, Menglei Xie, Jiahao Peng, Ting Su, **Chengyu Zhang**, Shin Hwei Tan.  
+  In *[ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/TOSEM)*, 2026.
+
+3. [Red Teaming LLMs via Linguistic-Aware Fuzzing](https://dl.acm.org/doi/10.1145/3808204). ![](/images/new.gif)  
+   *Shuai Yuan, Nian Luo, Jingling Sun, Yihao Huang, and **Chengyu Zhang***.  
    In Proceedings of *[FSE 2026](https://conf.researchr.org/home/fse-2026)*.
 
-2. [Understanding and Mitigating Hallucinations in Industrial LLM-based Unit Test Generation](). ![](/images/new.gif)  
+2. [Understanding and Mitigating Hallucinations in Industrial LLM-based Unit Test Generation](https://dl.acm.org/doi/10.1145/3803437.3805260). ![](/images/new.gif)  
    *Yanlun Tu, Ziyue Zhou, Cheng Xu, Jingling Sun, Shuai Feng, and **Chengyu Zhang***.   
    In Proceedings of *[FSE 2026](https://conf.researchr.org/home/fse-2026)*, Industry Paper.
 
