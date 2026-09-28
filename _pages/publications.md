@@ -20,6 +20,10 @@ I am also interested in **program analysis techniques** for:
 
 ## Selected Publications ([Google Scholar](https://scholar.google.com/citations?user=t87xiP8AAAAJ&hl=en), [dblp](https://dblp.org/pid/01/7515-1.html))
 
+1. [How Much Runtime State Should We Show Learners? An EEG Study of Feedback Granularity in Projection Boxes](https://2027.sigcse-ts.acm.org/details/sigcse-ts-2027-Papers-1/166/How-Much-Runtime-State-Should-We-Show-Learners-An-EEG-Study-of-Feedback-Granularity-). ![](/images/new.gif)  
+  Sverrir Thorgeirsson, Khashayar Etemadi, Sandra Wiklander, **Chengyu Zhang**, Karl-Heinz Weidmann, Zhendong Su.  
+  In Proceedings of *[SIGCSE 2027](https://2027.sigcse-ts.acm.org/)*.
+
 1. [An Empirical Study of False Negatives and Positives of Static Code Analyzers From the Perspective of Historical Issues](). ![](/images/new.gif)  
   Han Cui, Jingjing Liang, Menglei Xie, Jiahao Peng, Ting Su, **Chengyu Zhang**, Shin Hwei Tan.  
   In *[ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/TOSEM)*, 2026.
@@ -32,15 +36,15 @@ I am also interested in **program analysis techniques** for:
    *Yanlun Tu, Ziyue Zhou, Cheng Xu, Jingling Sun, Shuai Feng, and **Chengyu Zhang***.   
    In Proceedings of *[FSE 2026](https://conf.researchr.org/home/fse-2026)*, Industry Paper.
 
-3. [Diagnosing Performance Differences in Model Checkers via Runtime-Guided Problem Generation](https://dl.acm.org/doi/10.1109/ASE63991.2025.00019). ![](/images/new.gif)  
+3. [Diagnosing Performance Differences in Model Checkers via Runtime-Guided Problem Generation](https://dl.acm.org/doi/10.1109/ASE63991.2025.00019).   
    *Yibo Dong, Yicong Xu, Wenjing Deng, Yu Chen, Xiaoyu Zhang, Jianwen Li, **Chengyu Zhang**, and Geguang Pu*.   
    In Proceedings of *[ASE 2025](https://conf.researchr.org/home/ase-2025)*.
 
-4. [Validating Soundness and Completeness in Pattern-Match Coverage Analyzers](https://dl.acm.org/doi/pdf/10.1145/3763171). ![](/images/new.gif)  
+4. [Validating Soundness and Completeness in Pattern-Match Coverage Analyzers](https://dl.acm.org/doi/pdf/10.1145/3763171).  
    *Cyril Moser, Thodoris Sotiropoulos, **Chengyu Zhang** and Zhendong Su*.   
    In Proceedings of *[SPLASH/OOPSLA 2025](https://2024.splashcon.org/track/splash-2024-oopsla/)*.
 
-5. [Finding Logic Bugs in Spatial Database Engines via Affine Equivalent Inputs](https://dl.acm.org/doi/10.1145/3698810). ![](/images/new.gif)  
+5. [Finding Logic Bugs in Spatial Database Engines via Affine Equivalent Inputs](https://dl.acm.org/doi/10.1145/3698810). 
    *Wenjing Deng, Qiuyang Mang, **Chengyu Zhang** and Manuel Rigger*.   
    In Proceedings of *[SIGMOD 2025](https://2025.sigmod.org/)* (acceptance rate: 12%, 30/254).
 
